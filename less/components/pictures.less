@@ -1,0 +1,61 @@
+@import "var.less";
+
+.pictures {
+     margin-top: 30px;
+ 
+
+    &-title{    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    
+    &-title:before, &-title:after {
+        background-color:@color-yellow;
+        content: '';
+        flex-grow: 1;
+        height: 10px;
+        position: relative;
+        top: 0.5em;
+      
+    }
+    &-title:before {
+        margin-right:10px;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), color-stop(50%, @color-yellow));
+      
+      }
+      &-title:after {
+        margin-left:10px;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(@color-yellow), color-stop(100%,transparent));
+      
+      }
+   
+
+      &-img{
+        
+        justify-content: space-evenly;
+        
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            flex-wrap: wrap;
+
+            
+        }
+
+            max-width: 100%;
+        
+        img{
+             max-width: 100%;
+             width: 360px;
+             height: auto;
+             padding: 10px;
+             @media only screen and (min-width: @mobile){
+                 width: 209px;
+             }
+
+        }
+    }
+}

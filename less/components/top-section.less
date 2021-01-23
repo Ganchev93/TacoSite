@@ -1,0 +1,109 @@
+@import "var.less";
+
+.top-section {
+    
+    margin-top: 20px;
+    
+    @media only screen and (min-width: @mobile){
+        display: flex;
+        max-width: 100%;
+        
+    }
+
+    &-main {
+        padding: 50px;
+        background-image: url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg);
+        background-size: cover;
+        min-height: 400px;
+        margin-top: 20px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: -1px;
+        background-attachment: scroll;
+        background-position: bottom right;
+
+        @media only screen and (min-width: @mobile){
+            width: 70%;
+            margin-top: 0;
+        }
+        
+
+        h1 {
+            background-color: @color-yellow;
+            font-size: 30px;
+            font-weight: 700;
+            display: block;
+            box-sizing: initial;
+            max-width: 90%;
+            color: rgb(46, 46, 46);
+            text-transform: capitalize;
+            @media only screen and (min-width: @mobile){
+                width: 300px;
+            }
+            
+           
+        }
+
+        p{
+            background-color: @color-yellow;
+            color: rgb(46, 46, 46);
+            padding: 5px;
+            font-weight: 900;
+            font-size: 15px;
+            text-transform: capitalize;
+            max-width: 50%;
+            display: block;
+            @media only screen and (min-width: @mobile){
+                width: 150px;
+            }
+        }
+        
+    }
+
+    .top-section-item {
+        
+        
+
+        @media only screen and (min-width: @mobile){
+            
+            width: 30%;
+            margin-left: 20px;
+            
+        }
+        
+        &-price {
+            background-color: @color-yellow;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            @media only screen and (min-width: @mobile){
+                height: 48%;
+                width: 100%;
+                
+            }
+            
+            h2 {
+                font-size: 60px;
+                font-weight: 300;
+                margin: 15px 0 0 0 ;
+                padding-top: 15px;
+                color: rgb(48, 48, 48);
+                @media only screen and (min-width: @mobile){
+                    margin-top: 0;
+
+                    
+                }
+            }
+
+            p {
+               
+                font-weight: 900;
+                font-size: 15px;
+                
+            }
+        }
+    }
+    
+}

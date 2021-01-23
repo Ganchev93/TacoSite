@@ -1,0 +1,52 @@
+@import "var.less";
+
+.featured {
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding: 50px;
+    
+    width: 100%;
+    @media only screen and (min-width: @mobile){
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    
+        &-img {
+            height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            
+            margin-bottom: -40px;
+        }
+
+        &-details{
+            padding-bottom: 40px;
+         
+            p {
+                font-size: 17px;
+                color:rgb(32, 32, 32);
+                letter-spacing: -1px;
+                font-weight: 900;
+                line-height: 15px;
+                margin-bottom: 25px;
+                
+            }
+
+            a{
+                background-color: @color-yellow;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: rgb(32, 32, 32);
+                border-radius: 5px;
+                
+            }
+
+            span{
+                padding-top: 20px;
+            }
+        }
+
+        
+    
+}
